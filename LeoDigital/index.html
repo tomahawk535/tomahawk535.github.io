@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фестиваль української середньовычної культури</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Normalize.css">
+    <link rel="stylesheet" href="CSS/main.css">
+
+
+</head>
+<body>
+    <nav>
+        <img src="img/line-1.png" class="img-nav">
+        <ul class="navigation">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Программа</a></li>
+            <li><a href="#">Для відвідувачів</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li class="active"><a href="#">Про фестиваль</a></li>
+            <li><a href="#">Про заповідник</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul class="lang">
+            <li><a href="#">eng</a></li>
+            <li class="active"><a href="#">ukr</a></li>
+        </ul>
+        <div class="nav-btn">
+            <button class="btn"><a href="#">Купити квиток</a></button>
+            <button class="btn"><a href="#">Учасники</a></button>
+        </div>
+    </nav>
+    <header>
+        <img src="img/Header-logo.png" alt="logo" class="logo">
+    </header>
+    <article>
+        <div class="lines">
+            <a href="#">< На головну</a>
+        </div>
+        <div class="pos">
+            <h1 class="f-left">Программа фестивалю</h1>
+            <div class="f-right">
+                <img src="img/line-1.png" alt="line">
+                <img src="img/block-1.png" alt="block">
+            </div>
+        </div>
+        <div class="filters checkbox">
+            <div class="data">
+                <h1>Дата</h1>
+                    <span class="style-check"><input type="checkbox" id="all-data"><label for="all-data">Всі</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="data-1"><label for="data-1">5 серпня</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="data-2"><label for="data-2">6 серпня</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="data-3"><label for="data-3">7 серпня</label></span><br>
+            </div>
+            <div class="theme">
+                <h1>Тема</h1>
+                <p>
+                    <span class="style-check"><input type="checkbox" id="all-theme"><label for="all-theme">Всі</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="theme-1"><label for="theme-1">Головна сцена</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="theme-2"><label for="theme-2">Воїни</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="theme-3"><label for="theme-3">Ремісники</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="theme-4"><label for="theme-4">Тустанський університет</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="theme-5"><label for="theme-5">Театральна галявина</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="theme-6"><label for="theme-6">Камерна сцена</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="theme-7"><label for="theme-7">Духовна територія</label></span><br></p>
+            </div>
+            <div class="location">
+                <h1>Локація</h1>
+                <p>
+                    <span class="style-check"><input type="checkbox" id="all-loc"><label for="all-loc">Всі</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="stage-1"><label for="stage-1">Сцена 1</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="stage-2"><label for="stage-2">Сцена 2</label></span><br>
+                    <span class="style-check"><input type="checkbox" id="stage-3"><label for="stage-3">Сцена 3</label></span><br></p>
+            </div>
+            <button class="btn filter">Фільтрувати</button>
+            <button class="btn">Скинути фільтр</button>
+            <button class="btn">Завантажити PDF</button>
+
+        </div>
+        <div class=" select">
+            <div class="style-select">
+            <select title="date">
+                <option>Всі</option>
+                <option>5 Серпня</option>
+                <option>6 Серпня</option>
+                <option>7 серпня</option>
+            </select>
+            </div>
+            <div class="style-select">
+            <select title="theme">
+                <option>Всі</option>
+                <option>Головна сцена</option>
+                <option>Воїни</option>
+                <option>Ремісники</option>
+                <option>Тустанський університет</option>
+                <option>Театральна галявина</option>
+                <option>Камерна сцена</option>
+                <option>Духовна територія</option>
+            </select>
+            </div>
+            <div class="style-select">
+            <select title="place">
+                <option>Всі</option>
+                <option>Сцена 1</option>
+                <option>Сцена 2</option>
+                <option>Сцена 3</option>
+            </select>
+            </div>
+            <button class="btn">Фільтрувати</button>
+            <button class="btn">Скинути фільтр</button>
+            <button class="btn">Завантажити PDF</button>
+        </div>
+        <div class="program">
+            <figure class="data_1">
+                <img src="img/main-img.png">
+                <figcaption>
+                    <h1>Похід воїнів Бугурди</h1>
+                    <p>Дата: <span>6.08</span></p>
+                    <p>Час: <span>17:00</span></p>
+                    <p>Тема: <span>Воїни</span></p>
+                    <p>Локація: <span>Сцена 1</span></p>
+                </figcaption>
+            </figure>
+            <figure class="data_2">
+                <img src="img/main-img.png">
+                <figcaption>
+                    <h1>Дитяий штурм фортеці</h1>
+                    <p>Дата: <span>6.08</span></p>
+                    <p>Час: <span>14:00</span></p>
+                    <p>Тема: <span>Головна сцена</span></p>
+                    <p>Локація: <span>Сцена 2</span></p>
+                </figcaption>
+            </figure>
+            <figure class="data_3">
+                <img src="img/main-img.png">
+                <figcaption>
+                    <h1>Театр "Любард", вистава "Казан"</h1>
+                    <p>Дата: <span>7.08</span></p>
+                    <p>Час: <span>17:00</span></p>
+                    <p>Тема: <span>Воїни</span></p>
+                    <p>Локація: <span>Сцена 1</span></p>
+                </figcaption>
+            </figure>
+            <figure class="data_1">
+                <img src="img/main-img.png">
+                <figcaption>
+                    <h1>Похід воїнів Бугурди</h1>
+                    <p>Дата: <span>6.08</span></p>
+                    <p>Час: <span>17:00</span></p>
+                    <p>Тема: <span>Воїни</span></p>
+                    <p>Локація: <span>Сцена 1</span></p>
+                </figcaption>
+            </figure>
+            <figure class="data_1">
+                <img src="img/main-img.png">
+                <figcaption>
+                    <h1>Дитяий штурм фортеці</h1>
+                    <p>Дата: <span>6.08</span></p>
+                    <p>Час: <span>14:00</span></p>
+                    <p>Тема: <span>Головна сцена</span></p>
+                    <p>Локація: <span>Сцена 2</span></p>
+                </figcaption>
+            </figure>
+            <figure class="data_3">
+                <img src="img/main-img.png">
+                <figcaption>
+                    <h1>Театр "Любард", вистава "Казан"</h1>
+                    <p>Дата: <span>7.08</span></p>
+                    <p>Час: <span>17:00</span></p>
+                    <p>Тема: <span>Воїни</span></p>
+                    <p>Локація: <span>Сцена 3</span></p>
+                </figcaption>
+            </figure>
+            <figure class="data_2">
+                <img src="img/main-img.png">
+                <figcaption>
+                    <h1>Похід воїнів Бугурди</h1>
+                    <p>Дата: <span>6.08</span></p>
+                    <p>Час: <span>19:00</span></p>
+                    <p>Тема: <span>Воїни</span></p>
+                    <p>Локація: <span>Сцена 2</span></p>
+                </figcaption>
+            </figure>
+            <figure class="data_3">
+                <img src="img/main-img.png">
+                <figcaption>
+                    <h1>Дитяий штурм фортеці</h1>
+                    <p>Дата: <span>8.08</span></p>
+                    <p>Час: <span>13:00</span></p>
+                    <p>Тема: <span>Головна сцена</span></p>
+                    <p>Локація: <span>Сцена 2</span></p>
+                </figcaption>
+            </figure>
+            <figure class="data_1">
+                <img src="img/main-img.png">
+                <figcaption>
+                    <h1>Театр "Любард", вистава "Казан"</h1>
+                    <p>Дата: <span>07.08</span></p>
+                    <p>Час: <span>.15:00</span></p>
+                    <p>Тема: <span>Воїни</span></p>
+                    <p>Локація: <span>Сцена 1</span></p>
+                </figcaption>
+            </figure>
+        </div>
+
+    </article>
+    <footer>
+        <img src="img/footer-logo.png" class="foter-logo">
+        <p class="call-num">pr@tustan.ua <br> +38 067 282 00 62 </p>
+        <ul class="social">
+            <li><a href="#"><img src="img/social-1.jpg"></a></li>
+            <li><a href="#"><img src="img/social-2.jpg"></a></li>
+            <li><a href="#"><img src="img/social-3.jpg"></a></li>
+        </ul>
+
+        <p class="foo">Ідея цьогорічного фестивалю "Ту Стань" - це події ХІІІ століття, які малі на меті об єднати Європу
+        у боротьбі проти монгол. Ще в 13 ст.Україна віступіла щитом між Європою і Азіею. У сучасній історії України
+        можно провести чимало паралелей з історією державних об єднань, які існували на українскій території у попередні
+        епохи. Під час фестивалю, Ви матимете змогу взяти участь у реконструкції побуту часів короля Данила Романовича,
+        який виступив проти ординців, зміцнив Галицькао-Волинську державу й намагався відновитит незалежну Русь.</p>
+        <p class="foo">&copy Copyright 2015</p>
+    </footer>
+
+
+</body>
+</html>

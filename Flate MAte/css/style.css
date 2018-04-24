@@ -1,0 +1,344 @@
+/*------------------ Colors--------------*/
+body {
+  background-color: #f6f6f7;
+}
+header {
+  background: url("../img/bg-image-1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+header .row {
+  background-color: rgba(69, 84, 105, 0.7);
+  padding: 2% 10%;
+}
+header .logo {
+  float: left;
+  width: 15%;
+}
+header .btn-default.login {
+  background-color: #3d4b60;
+  float: right;
+  padding: .5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+  margin: 0 .5rem;
+}
+header .btn-default.login:hover {
+  background-color: #52ad81;
+}
+header p {
+  display: block;
+  float: right;
+}
+header .banner {
+  text-align: left;
+  padding: 9rem 0;
+  color: #e4e2ea;
+  position: relative;
+}
+header .banner h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 4.375rem;
+}
+header .banner img {
+  float: right;
+  position: absolute;
+  top: 30%;
+  right: 2%;
+}
+header .banner p {
+  float: none;
+  font-size: 1.85rem;
+}
+header .banner .btn-default {
+  background-color: #67bf95;
+  padding: .5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+}
+header .banner .btn-default a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header .banner .btn-default:hover {
+  background-color: #52ad81;
+}
+article {
+  overflow: hidden;
+  padding: 7rem 0;
+}
+article .row {
+  padding: 0 10%;
+}
+article .banner1 h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 3rem;
+  display: block;
+  float: left;
+  padding: 0 2rem;
+}
+article .banner1 p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  display: block;
+  float: left;
+  width: 60%;
+  padding: 0 2rem;
+  margin-top: 2rem;
+  text-align: justify;
+}
+article .banner1 ul {
+  float: right;
+  width: 10.333333333%;
+  list-style-type: none;
+}
+article .banner1 ul li:nth-child(2n) {
+  margin-top: 4rem;
+}
+article .banner2 {
+  float: left;
+  padding: 0;
+}
+article .intro {
+  background-color: #52ad81;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  color: #ffffff;
+}
+article .intro h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+}
+article .intro p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+article .intro img {
+  margin-top: 7rem;
+}
+article .rate {
+  color: #37414e;
+  padding-top: 8rem;
+}
+article .rate h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+article .rate p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-kerning: normal;
+}
+article .rate .rate1 {
+  text-align: center;
+}
+article .rate .rate1 h1 {
+  display: block;
+  background-color: #4b596c;
+  color: #ffffff;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+}
+article .rate .rate1 ul {
+  background-color: #e9eef3;
+  text-align: center;
+  padding: 3rem;
+}
+article .rate .rate1 ul li {
+  list-style-type: none;
+  margin-bottom: 3rem;
+  color: #4b596c;
+}
+article .rate .rate1 ul :first-child {
+  font-weight: 600;
+}
+article .rate .rate1 .btn {
+  background-color: #4b596c;
+  color: #ffffff;
+  margin: 2rem 0;
+  text-transform: capitalize;
+}
+article .rate .rate1 .btn:hover {
+  background-color: #67bf95;
+}
+article .rate .rate2 {
+  text-align: center;
+}
+article .rate .rate2 h1 {
+  display: block;
+  background-color: #58ad52;
+  color: #ffffff;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+}
+article .rate .rate2 ul {
+  background-color: #deebde;
+  text-align: center;
+  padding: 3rem;
+}
+article .rate .rate2 ul li {
+  list-style-type: none;
+  margin-bottom: 3rem;
+  color: #58ad52;
+}
+article .rate .rate2 ul :first-child {
+  font-weight: 600;
+  color: #58ad52;
+}
+article .rate .rate2 .btn {
+  background-color: #58ad52;
+  color: #ffffff;
+  margin: 2rem 0;
+  text-transform: capitalize;
+}
+article .rate .rate2 .btn:hover {
+  background-color: #67bf95;
+}
+article .rate .rate3 {
+  text-align: center;
+}
+article .rate .rate3 h1 {
+  display: block;
+  background-color: #52a1ad;
+  color: #ffffff;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+}
+article .rate .rate3 ul {
+  background-color: #dee9ec;
+  text-align: center;
+  padding: 3rem;
+}
+article .rate .rate3 ul li {
+  list-style-type: none;
+  margin-bottom: 3rem;
+  color: #52a1ad;
+}
+article .rate .rate3 ul :first-child {
+  font-weight: 600;
+  color: #52a1ad;
+}
+article .rate .rate3 .btn {
+  background-color: #52a1ad;
+  color: #ffffff;
+  margin: 2rem 0;
+  text-transform: capitalize;
+}
+article .rate .rate3 .btn:hover {
+  background-color: #67bf95;
+}
+article div.row.video {
+  padding: 5rem 0;
+}
+article .video h1 {
+  display: block;
+  width: 100%;
+  background-color: #e9eaed;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  padding: 2rem;
+}
+article .video iframe {
+  background-color: #e9eaed;
+}
+@media screen and (max-width: 801px) {
+  article .banner1 h1 {
+    font-size: 2rem;
+  }
+  article .banner1 p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  article .banner1 ul {
+    width: 15%;
+    margin-top: -1rem;
+  }
+  article .banner1 ul li:nth-child(2n) {
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  header .logo {
+    width: 30%;
+  }
+  header .banner h1 {
+    font-size: 2rem;
+  }
+  header .banner p {
+    font-size: 1rem;
+  }
+  article .banner1 h1 {
+    margin-top: 0;
+  }
+  article .banner1 ul {
+    margin-top: -2rem;
+  }
+  article .video iframe {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .logo {
+    width: 30%;
+  }
+  header .banner {
+    padding: 4rem 0;
+  }
+  header .banner h1 {
+    font-size: 1.5rem;
+  }
+  header .banner img {
+    float: right;
+    position: absolute;
+    top: 30%;
+    right: 2%;
+  }
+  header .banner p {
+    font-size: .7rem;
+  }
+  article {
+    padding-top: 2rem;
+  }
+  article .banner1 p {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  article .banner1 ul {
+    float: right;
+    width: 50%;
+    margin-top: 0.3rem;
+  }
+  article .banner1 ul li {
+    display: inline-block;
+    width: 30%;
+  }
+  article .banner2 {
+    display: none;
+  }
+  article .intro {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+  article .intro img {
+    margin-top: 3rem;
+  }
+  article .rate {
+    padding-top: 3rem;
+  }
+  article .video iframe {
+    height: 300px;
+  }
+}

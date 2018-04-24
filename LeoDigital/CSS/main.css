@@ -1,0 +1,429 @@
+
+body {width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f6edd0;
+}
+
+.select, .img-nav {
+    display: none;
+}
+nav, header, article {
+    padding: 2% 10%;
+}
+nav {
+    overflow: hidden;
+    line-height: 0.8rem;
+    background-color: #fdfbf6;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+nav .navigation {
+    padding: 0;
+    float: left;
+}
+nav li {
+    display: inline-block;
+}
+nav li.active a {
+    color: #be282f;
+}
+nav li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    margin-right: 0.625rem;
+}
+nav li.active a {
+    color: #be282f;
+}
+ nav .lang {
+    float: right;
+}
+.nav-btn {
+     position: absolute;
+     top: 50%;
+     right: 15%;
+     margin-top: -15px;
+}
+.btn {
+    background-color: #fdfbf6;
+    border: 0.0625rem solid #be282f;
+    margin: 0  0.4375rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+.btn:hover, .filters .btn:hover{
+    background-color: #be282f;
+}
+.btn:hover>a {
+    color: #fdfbf6;
+}
+.btn a{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: #be282f;
+}
+.filters .btn {
+    background-color: #f6edd0;
+}
+nav ul.lang li {
+    display: block;
+}
+
+
+/*----end navigation----*/
+
+header{
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*----end Header----*/
+
+article{
+    overflow: hidden;
+}
+.lines a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #a8353a;
+}
+.pos {
+    position: relative;
+    font-size: 1rem;
+    font-weight: normal;
+    padding-left:  1%;
+    border-left: 5px solid  #be282f;
+}
+article .f-right{
+    float: left;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
+}
+.f-right img:hover {
+    cursor: pointer;
+}
+.filters {
+    text-align: center;
+}
+.filters, .program {
+    float: left;
+    padding-top: 5%;
+    margin-bottom: 4%;
+}
+.theme, .data, .location {
+    background-color: #fff;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    text-align: left;
+    font-size: 0.8rem;
+}
+.filters h1{
+    color: #6e6e6e;
+    font-size: 1.125rem;
+}
+.filters button {
+    width: 80%;
+    margin-top: 3%;
+}
+.data {
+    margin-top: -.9rem;
+}
+article .filters {
+    width: 20%;
+}
+article .program {
+    width: 78%;
+    margin-left: 2%;
+}
+.program figure {
+    float: left;
+    width: 30%;
+    margin: 0 2%;
+    background-color: #ffffff;
+}
+.program figure:nth-child(n+4) {
+    margin-top: 3%;
+}
+.program figure:nth-child(3n) {
+    margin-right: 0;
+}
+.program figure img {
+    width: 100%;
+    height: auto;
+}
+.program figcaption {
+    padding: 5%;
+    color: #6e6e6e;
+}
+.program figcaption h1 {
+    font-size: 1rem;
+    display: inline-block;
+    height: 3.4375rem;
+}
+.program span {
+    color: #000;
+}
+/*---end Article---*/
+footer {
+    padding: 3% 15%;
+    background-color: #a8353a;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: justify;
+}
+footer .foo{
+    clear: both;
+    margin-top: 2%;
+}
+footer img, .call-num {
+    float: left;
+    margin-bottom: 3%;
+}
+.call-num {
+    margin-left: 5.375rem;
+}
+.social {
+    float: right;
+}
+.social li {
+    display: inline-block;
+}
+/*--end footer---*/
+
+/*----Style for checkbox---*/
+.style-check {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+}
+.style-check input {
+    width: 16px;
+    height: 15px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7.5px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+}
+.style-check label {
+    font-size: 12px;
+    line-height: 1.6rem;
+    display: block;
+    padding-left: 25px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.style-check label:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    margin-top: -7.5px;
+    background:  rgba(0, 0, 0, 0) url("../img/checkbox.png") no-repeat  top left;
+    z-index: 5;
+    content: "";
+    border: 1px solid black;
+}
+.style-check input:checked + label:before {
+    background-position:   0 -15px;
+}
+
+
+/*-----------------------------------------------media ----------------------------------------*/
+@media  screen and (max-width: 1024px) {
+    header img {  /*----make image responsive---*/
+        width: 50%;
+        height: auto;
+    }
+    footer .foter-logo {
+        width: 50%;
+        height: auto;
+    }
+}
+@media  screen and (max-width: 805px) {
+    nav {
+        text-align: center;
+    }
+    header {
+        padding: 10% 5%;
+    }
+    nav .navigation {
+        padding: 0;
+        float: none;
+    }
+    ul.lang {
+        margin: 0;
+    }
+    .nav-btn {
+        position: relative;
+        margin: 1% auto;
+        width: 70%;
+        float: left;
+    }
+    .checkbox {
+        display: none
+    }
+    /*----style for select----*/
+    .style-select{
+        width: 32%;
+        overflow: hidden;
+        border: .0625rem solid #a8353a;
+        border-radius: 0.3rem;
+        margin: 0  0 0 1%;
+        float: left;
+        background: url("../img/seleckt.png") no-repeat right;
+        background-color: #f6edd0;
+    }
+    .style-select select {
+        width: 110%;
+        background: transparent;
+        border: none;
+    }
+    .select .btn {
+        width: 32%;
+        float: left;
+        margin: 1% 0 0 1%;
+        background-color: #f6edd0 ;
+    }
+    .select .btn:hover{
+        background-color:  #a8353a;
+    }
+    /*--end select---*/
+    article .program {
+        clear: both;
+        width: 100%;
+         margin-left: 0;
+    }
+    .theme, .data, .location {
+        float: left;
+        width: 22.66666%;
+    }
+    .select {
+        display: block;
+    }
+    .call-num {
+        margin-left: 7rem;
+    }
+}
+@media  screen and (max-width: 714px){  /*--add mobile Navigation-*/
+    nav, article {
+        padding: 0 5%;
+    }
+    nav {
+        text-align: left;
+        position: relative;
+    }
+    .img-nav {
+        display: block;
+        margin:  2% 0;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li:hover + a {
+     color: #be282f;
+    }
+    .img-nav:hover + .navigation li {
+        display: block;
+    }
+    nav .navigation {
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        width: 35%;
+        padding: 1%;
+        border-bottom: .0625rem dashed #f6edd0;
+    }
+    .nav-btn button {
+        width: 40%;
+        font-size: .7rem;
+    }
+    .nav-btn {
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        margin-left: -30%;
+        float: left;
+    }
+    .lang {
+        font-size: .5rem;
+        position: absolute;
+        top: 5%;
+        right: 0;
+        text-transform: uppercase;
+    }
+}
+@media  screen and (max-width: 641px) {
+    .style-select {
+        margin: 0;
+    }
+    .program figure {
+        width: 45%;
+    }
+    .program figure:nth-child(n+3) {
+        margin-top: 3%;
+    }
+    .program figure:nth-child(3n) {
+        margin-right: 2%;
+    }
+    .program figcaption h1 {
+        height: 1.8rem;
+    }
+    footer .foter-logo {
+        width: 100%;
+        height: auto;
+        clear: both;
+    }
+    .call-num {
+        margin-left: 1rem;
+    }
+
+}
+@media  screen and (max-width: 420px) {
+    nav, article {
+        padding: 0 2%;
+    }
+    header img {
+        width: 100%;
+        height: auto;
+    }
+    .btn {
+        font-size: .5rem;
+    }
+    .pos {
+        font-size: 0.7rem ;
+    }
+    .program figure {
+        width: 100%;
+        margin: 0;
+    }
+    .program figure:nth-child(n+2) {
+        margin-top: 5%;
+    }
+    .program figure:nth-child(3n) {
+        margin-right: 2%;
+    }
+    .program figcaption h1 {
+        height: 1rem;
+    }
+    .social {
+        float: none;
+        padding: 0;
+    }
+    footer img, .call-num {
+        float: none;
+    }
+}
