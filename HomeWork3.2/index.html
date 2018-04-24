@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn Git</title>
+
+</head>
+<body>
+
+
+
+	<script>
+		var z = prompt('Enter your phone number! in format +380 code of operator phone number!');
+		var x = z.slice(0,6);
+			console.log(x);
+		var obj = {
+		    oppMTC: 'МТС',
+			oppLife: 'Lifecell',
+			oppKyivStar: 'Kyivstar',
+			codeMTC: '+38050',
+			codeMTC: '+38099',
+			codeLife: '+38063',
+			codeLife: '+38093',
+			codeKyiv: '+38067'
+
+		};
+
+		if (x==obj.codeKyiv){
+		    console.log('Ваш оператор '+ obj.oppKyivStar)
+		} else if (x==obj.codeLife){
+            console.log('Ваш оператор '+ obj.oppLife)
+		} else if (x==obj.codeMTC){
+            console.log('Ваш оператор '+ obj.oppMTC)
+		} else {
+			console.log('Ваш оператор не идентифецирован. Поторите попытку ввода снова')
+		}
+
+
+
+	</script>
+</body>
+</html>
