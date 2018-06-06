@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Parabelum</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript">
+        function changeText(theTag, textto) {
+            theTag.innerHTML=textto;
+        }
+    </script>
+
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="nav-bar_menu">
+            <li class="nav-bar_menu_item"><a href="#about">about us</a></li>
+            <li class="nav-bar_menu_item"><a href="#espionage">espionage challenge</a></li>
+            <li class="nav-bar_menu_item"><a href="#desert">desert challenege</a></li>
+            <li class="nav-bar_menu_item"><a href="#contact">contact</a></li>
+        </ul>
+        <div class="nav-bar_brend">
+            <img class="logo" src="pictures/LOGO.png">
+        </div>
+        <div class="nav-bar_logon">member login</div>
+    </nav>
+    <header class="header">
+        <video id="my-vid" autoplay="autoplay" muted="muted" loop="loop" width="100%">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <p class="header_text" onmousemove="changeText(this, 'if you want,')" onmouseout="changeText(this,'si vis')">si vis</p>
+        <p class="header_text" onmousemove="changeText(this, 'peace,')" onmouseout="changeText(this,'pacem,')">pacem,</p>
+        <p class="header_text" onmousemove="changeText(this, 'prepare for war')" onmouseout="changeText(this,'para bellum')">para bellum</p>
+    </header>
+    <div id="about">
+        <h1 >about us</h1>  <!--sangBlue Regular-->
+        <div class="line"></div>
+
+        <h3>Ultimate capability. Calm in adversity</h3> <!--AGaramond-->
+        <p class="reg">Parabellum offers tailored training programmes and unique, intelligent experiences to equip elite individuals
+            with the skills, intuition and preparation they require to function professionally at the highest level.
+        </p> <!--sangblau regular-->
+        <p>Founded by members of Israeli intelligence communities and elite special forces, Parabellum's  philosophy
+         and services are based on advanced knowledge of espionage, survival, anti-terrorism, hostage negotiation,
+        combat and psychological warfare methods.</p> <!--sangBlau Light-->
+        <p> the Parabellum experience is designed to challenge physicaly, emotionaly and intellectually.
+        Tailor-made  to each client's capability and resulting in better focus, preparation  and ability
+        to deal with extreme stress and unconventional, highky-charged situations.</p>
+        <video controls="controls" width="60%" loop="loop" class="video">
+            <source src="video.mp4">
+        </video>
+    </div>
+    <div class="es-challenge" id="espionage">
+        <div class="es-challenge_pr1">
+            <h1>espionage challenge</h1>
+            <p>challenge 0001/2018</p>
+        </div>
+        <div class="es-challenge_pr2">
+            <h3>You are undercover</h3>
+            <p>Your mission is conducted under real-life conditions. Tailored to your capabilities and personal profile,
+                our Espionage experience challenges you across all areas and stretches the limits of both your skill set
+                and your imagination.</p>
+        </div>
+    </div>
+    <div class="ds-challenge" id="desert">
+        <div class="ds-challenge_pr1">
+            <h1>desert challenge</h1>
+            <p>challenge 0002/2018</p>
+        </div>
+        <div class="ds-challenge_pr2">
+            <h3>Dropped into desert conditions, this is a
+                mission where preparation is key.
+            </h3>
+            <p>Combining a variety of techniques and real-life circumstances, you will need to understand your survival
+                skills and capabilities to escape in order to save your life, and others. As you are pursued by elite
+                special forces veterans you will encounter extreme events and deal with uncertain situations and a loss
+                of control in order to learn mental and physical techniques for you to remain in control..</p>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="con">contact</div>
+        <div class="email">
+            <p>control@parabellum.co</p>
+            <p>31° 30’ 0"N 34° 45’ 0"E</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

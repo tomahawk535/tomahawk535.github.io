@@ -1,0 +1,191 @@
+@font-face {
+    font-family: Garamon;
+    src: url(../fonts/AGaramondPro-Regular.otf);
+}
+@font-face {
+    font-family: NeueHaasUnicaPro-Light;
+    src: url(../fonts/NeueHaasUnicaPro-Light.otf);
+}
+@font-face {
+    font-family: NeueHaasUnicaPro-Regular;
+    src: url(../fonts/NeueHaasUnicaPro-Regular.otf);
+}
+@font-face {
+    font-family: SangBleuKingdom-Light;
+    src: url(../fonts/SangBleuKingdom-Light.otf);
+}
+@font-face {
+    font-family: SangBleuKingdom-Regular;
+    src: url(../fonts/SangBleuKingdom-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    color: white;
+    padding: 2% 0;
+}
+
+
+ /* Стилизация меню */
+.nav-bar {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 2%;
+    font-family: Garamon;
+}
+.nav-bar_menu {
+    float: left;
+    width: 35%;
+}
+.nav-bar_menu_item {
+    display: inline-block;
+    margin: 0 1%;
+
+}
+.nav-bar_menu_item a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 12px;
+    font-family: Garamon;
+}
+.nav-bar_brend {
+    float: left;
+    width: 35%;
+}
+.nav-bar_brend img {
+    width: 60%;
+}
+.nav-bar_logon{
+    float: left;
+    width: 25%;
+    font-size: 12px;
+    text-transform: capitalize;
+    text-align: right;
+}
+.nav-bar_logon:hover {
+    cursor: pointer;
+}
+
+/*Стилизаци хедера*/
+.header {
+    /*background-image: url("../pictures/video_bg.jpg");*/
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 2;
+    margin-bottom: 15px;
+    padding: 150px 0;
+    font-family: SangBleuKingdom-Regular;
+}
+#my-vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    z-index: -1;
+}
+
+/*Стилизация about us */
+
+#about {
+    width:60%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    padding: 150px 0;
+}
+#about h1  {
+    text-transform: uppercase;
+    font-family: SangBleuKingdom-Regular;
+}
+#about h3 {
+    margin-bottom: 5px;
+    font-family: Garamon;
+}
+.line {
+    width: 10%;
+    border: 1px solid white;
+    margin: 10px auto;
+    opacity: 0.7;
+}
+.video {
+    width: 100%;
+}
+.reg {
+    font-family: SangBleuKingdom-Regular;
+    font-weight: bold;
+}
+#about p {
+    margin-bottom: 10px;
+    font-family: SangBleuKingdom-Light;
+}
+
+.es-challenge, .ds-challenge{
+    width: 100%;
+    text-align: center;
+}
+.es-challenge_pr1 {
+    background-image: url("../pictures/espionage_challenge_1.png");
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+    font-family: SangBleuKingdom-Regular;
+}
+.es-challenge_pr1 h1, .ds-challenge_pr1 h1{
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.es-challenge_pr2, .ds-challenge_pr2 {
+    padding: 200px 0;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: SangBleuKingdom-Light;
+}
+.es-challenge_pr2 h3, .ds-challenge_pr2 h3 {
+    margin-bottom: 50px;
+    font-family: SangBleuKingdom-Regular;
+}
+.ds-challenge_pr1 {
+    background-image: url("../pictures/espionage_challenge_2.png");
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+    font-family: SangBleuKingdom-Regular;
+}
+
+#contact {
+    font-family: SangBleuKingdom-Regular;
+    margin-bottom: 100px;
+}
+.con {
+    width: 49%;
+    text-align: right;
+    text-transform: uppercase;
+    float: left;
+    padding-right: 1%;
+    font-size: 33px;
+}
+.email {
+    width: 49%;
+    text-align: left;
+    float: left;
+    padding-left: 1%;
+}
+
+@media screen and (max-width: 1025px){
+    #about {
+        padding: 100px 0;
+    }
+    .nav-bar {
+        margin-bottom: 10px;
+    }
+}
