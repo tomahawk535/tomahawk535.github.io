@@ -113,7 +113,7 @@ header {
     background-color: #d45e5e;
     color: #ffffff;
     padding: 2.5rem 5%;
-    height: 12rem;
+    height: 15rem;
 }
 .bio_person {
     float: left;
@@ -186,45 +186,40 @@ header {
 
 
 /*-----------------------------------------------------*/
-@media  screen and (max-width: 700px) {
+@media  screen and (max-width: 768px) {
+    nav  {
+        position: relative;
+    }
     .nav_logo {
         float: none;
         width: 60%;
     }
-
     .line {
         width: 100%;
         border: 0.0625rem solid black;
         margin: .3125rem 0;
     }
-
     .nav_menu {
         width: 100%;
         text-align: center;
         float: none;
     }
-
     .nav_menu_item {
         display: inline-block;
         height: 70%;
         padding: 1.125rem 5%;
     }
-
     header {
-        margin-top: 3.6rem;
+        margin-top: 0;
+        padding: 1rem 0;
     }
-
     .gallery {
         padding-top: 0.125rem;
     }
-
     .gallery_item {
         width: 40%;
         margin: 4% 4%;
     }
-
-
-
     .bio {
         height: 30rem;
     }
@@ -249,7 +244,24 @@ header {
         float: left;
         margin-top: 5rem;
         padding: 0;
-
-
     }
+}
+
+@media  screen and (max-width: 500px) {
+
+    .nav_menu_item {
+        padding: 1.125rem 1%;
+    }
+    .bio {
+        height: 35rem;
+    }
+    .bio_person_name {
+        margin-left: 1%;
+        font-size: 1.3rem;
+    }
+    .bio_person_twitter,
+    .bio_person_dribble {
+        width: 8%;
+    }
+
 }
