@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F5F7FA;
+    padding: 2.500em;
+    font-family: Montserrat; 
+    margin: 0;
+    
+    
+}
+.wrapper {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 9px 20px 0px rgba(0,0,0,0.15);
+    width: 100%;
+    
+}
+.side-bar {
+    background-color: #1E2939;
+    padding: 2.500em 0;
+    margin: 0;
+    width: 30%;  
+}
+.photo {
+    max-width: 100%;
+}
+
+
+/*style contact container*/ 
+.contact_container {
+    color: #FFFFFF;
+    margin: 3.438em 2.500em;
+}
+.contact_container > h3 {
+    margin-bottom: 1.250em;
+    font-size: 1.188em;
+}
+ .contact_container span {
+    font-weight: 700;   
+}
+.contact-links {
+    color: #A6A8AD;
+    margin-left: 0.625em;
+    text-decoration: none;
+}
+.contact-item {
+    margin-bottom: 0.188em;
+}
+
+
+/* style skills container */
+
+.skill_container {
+    margin: 3.438em 2.500em;
+    color: #FFFFFF;
+}
+
+.skill_container > h3{
+    margin-bottom: 1.250em;
+    font-size: 1.188em;
+   
+}
+.skill-item {
+    margin-left: 1.250em;
+    color: #FF6B08;
+    margin-bottom: 0.188em ;
+}
+.skill-item span {
+    color: #FFFFFF;
+}
+
+/* main container*/
+
+.article {
+    padding-left: 5.5rem;
+    padding-top: 3.75rem;
+    width: 60%;
+}
+.maininfo h2 {
+    font-family: Montserrat;
+    font-size: 0.875em;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.maininfo h1 {
+    font-family: Montserrat;
+    font-size: 2.813em;
+    line-height: 1.875em;
+    font-weight: 700;
+}
+.maininfo p{
+    font-family: Montserrat;
+    font-size: 0.875em;
+    line-height: 1.875em;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #595959;
+    
+    
+}
+.project  {
+    margin-top: 3.3125rem;
+}
+.article h3 {
+    font-family: Montserrat;
+    font-size: 1.375em;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 1.125rem;
+    margin-top: 2.8125rem;
+}
+
+.project li {
+    font-family: Montserrat;
+    font-size: 0.875em;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #595959;
+}
+.project ol {
+    margin-top: 0.4375rem;
+}
+.project li {
+    margin-bottom: 0.625rem;
+}
+.project li a {
+    text-decoration: none;
+    color: #595959;
+}
+.project span {
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #000000;
+}
+
+.exp h4 {
+    margin-bottom: 1em;
+}
+
+.ed {
+    margin-bottom: 3em;
+}
+.ed h4 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+
+
+
+/* for mobile only   */
+@media all and (max-width:599px){
+    .wrapper {
+        flex-wrap: wrap-reverse;
+    }
+    .side-bar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article {
+        margin: 1em 1.250em;
+        padding: 0;
+        
+        width: 100%;
+        
+    }
+    .article h1 {
+        font-size: 2em;
+        line-height: 1em;
+        margin: 1em 0;
+        text-align: center;
+        
+    }
+    .article p {
+        text-align: justify;
+    }
+    .skill_container {
+        margin: 1em 0;
+        padding: 0 1.350em;
+        width: 50%;
+        box-sizing: border-box;      
+    }
+    .skill_container li {
+    font-size: 0.750em;
+    }
+
+}
+
+/* for tablet portrait up */
+@media all and (min-width:600px) {
+    .wrapper {
+        flex-wrap: wrap-reverse;
+    }
+    .side-bar {
+        width: 100%;
+    }
+
+
+
+    .step {
+        margin-left:2px;
+    }
+}
+
+/* for tablet landscape up  */
+@media all and (min-width:900px) {
+    .step {
+        margin-left: 5.1875em;
+    }
+
+}
+
+/* for desktop up  */
+@media all and (min-width:1200px) {
+}
+
+/* for big desktop up  */
+@media all and (min-width:1800px) {
