@@ -146,6 +146,7 @@ body {
 }
 .exp ul {
     padding-left: 5%;
+    margin-top: 1.5em;
 }
 .ed {
     margin-bottom: 3em;
@@ -183,20 +184,17 @@ body {
     .contact_container {
         margin: 1em 3em 1em 1em;
     }
-
     .article {
         margin: 1em 1.250em;
         padding: 0;
         
-        width: 100%;
-        
+        width: 100%; 
     }
     .article h1 {
         font-size: 2em;
         line-height: 1em;
         margin: 1em 0;
-        text-align: center;
-        
+        text-align: center;   
     }
     .article p {
         text-align: justify;
@@ -210,19 +208,39 @@ body {
 
 }
 
-/* for tablet portrait up */
-@media all and (min-width:600px) {
+@media screen and (min-width:600px) and (max-width:1050px) {
    
     .step {
         margin-left:2px;
     }
+    .side-bar {
+        width: 40%;
+    }
+    .article {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .article h1 {
+        line-height: normal;
+        margin-bottom: 1em;
+    }
+    .contact_container {
+        margin: 1.719em 1em;
+
+    }
+    .contact-item {
+        font-size: 0.625em
+    }
+    .skill_container {
+        margin: 1.719em 1em;
+    }
 }
 
-/* for tablet landscape up  */
 @media all and (min-width:900px) {
     .step {
-        margin-left: 5.1875em;
+        margin-left: 4.1875em;
     }
+
 
 }
 
@@ -232,5 +250,7 @@ body {
 
 /* for big desktop up  */
 @media all and (min-width:1800px) {
-
+    body {
+        padding: 2.500em 10%;
+    }
 }
