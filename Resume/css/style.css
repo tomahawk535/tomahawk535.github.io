@@ -114,7 +114,9 @@ body {
     margin-bottom: 1.125rem;
     margin-top: 2.8125rem;
 }
-
+.project ol {
+    padding-left: 5%;
+}
 .project li {
     font-family: Montserrat;
     font-size: 0.875em;
@@ -142,7 +144,9 @@ body {
 .exp h4 {
     margin-bottom: 1em;
 }
-
+.exp ul {
+    padding-left: 5%;
+}
 .ed {
     margin-bottom: 3em;
 }
@@ -156,6 +160,9 @@ body {
 
 /* for mobile only   */
 @media all and (max-width:599px){
+    body {
+        padding: 3%;
+    }
     .wrapper {
         flex-wrap: wrap-reverse;
     }
@@ -164,6 +171,19 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
+    .skill_container {
+        margin: 1em 0;
+        padding: 0 1.350em;
+        width: 50%;
+        box-sizing: border-box;      
+    }
+    .skill_container li {
+        font-size: 0.750em;
+    }
+    .contact_container {
+        margin: 1em 3em 1em 1em;
+    }
+
     .article {
         margin: 1em 1.250em;
         padding: 0;
@@ -181,29 +201,18 @@ body {
     .article p {
         text-align: justify;
     }
-    .skill_container {
-        margin: 1em 0;
-        padding: 0 1.350em;
-        width: 50%;
-        box-sizing: border-box;      
-    }
-    .skill_container li {
-    font-size: 0.750em;
+    .photo {
+        width:20.000em;
+        height: 20.000em;
+        margin: auto;
+
     }
 
 }
 
 /* for tablet portrait up */
 @media all and (min-width:600px) {
-    .wrapper {
-        flex-wrap: wrap-reverse;
-    }
-    .side-bar {
-        width: 100%;
-    }
-
-
-
+   
     .step {
         margin-left:2px;
     }
@@ -223,3 +232,5 @@ body {
 
 /* for big desktop up  */
 @media all and (min-width:1800px) {
+
+}
