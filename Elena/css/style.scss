@@ -144,6 +144,9 @@ article {
       width: 30%;
       text-align: center;
       align-self: center;
+      .offers_item_img {
+        height: 42px;
+      }
       h1 {
         color: #40474e;
         border-bottom: 2px solid rgba(64,71,78, 0.05);
@@ -203,8 +206,166 @@ article {
     }
 
   }
-}
+  .info {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 3.75rem 5%;
+    .img {
+      width:32px;
+    }
+    h1{
+      width: 80%;
+      margin-left: 1.125rem;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+    p {
+      margin-top: 1.5rem;
+      padding: 1.5rem 0;
+      border-top: 2px solid rgba(64,71,78, 0.05);
+      color: #787b80;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+    input {
+      width: 20%;
+      padding: 2%;
+      background-color: #B2BEB5;
+      color: #f5f5f5;
+      font-weight: 400;
+      border: none;
+      border-radius: 1.563rem;
+      text-transform: uppercase;
+      outline: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .modules {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3.75rem 5%;
+    background-color: #f5f5f5;
+    .modules_item {
+      width: 30%;
+      text-align: left;
+      h1{
+        color: #40474e;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        padding: 2.5rem 0 1.375rem;
+        border-bottom: 2px solid rgba(64,71,78, 0.05);
+      }
+      p {
+        color: #787b80;
+        font-size: 0.875rem;
+        font-weight: 400;
+        padding: 30px 0;
+      }
+      a {
+        text-decoration: none;
+        color: $footer_bg-color;
+      }
+    }
 
+  }
+  .booking {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3.75rem 5%;
+    .booking_type {
+      width: 45%;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      h1{
+        width: 60%;
+        color: #40474e;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        padding: 0;
+        margin-left: 1rem;
+
+      }
+      p{
+        color: #787b80;
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        padding: 1.5rem 0;
+        border-top: 2px solid rgba(64,71,78, 0.05);
+      }
+      input {
+        width: 40%;
+        padding: 4%;
+        background-color: $footer_bg-color;
+        color: #f5f5f5;
+        font-weight: 400;
+        border: none;
+        border-radius: 1.563rem;
+        text-transform: uppercase;
+        outline: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}
+/*-- article style end here--*/
+/*-- footer style start here--*/
+footer {
+  margin: 0 auto;
+  max-width: 50rem;
+  background-color: $footer_bg-color;
+
+  .futered {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    padding: 3.75rem 5%;
+    h1 {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    p {
+      text-transform: uppercase;
+      font-family: $footer_company_font;
+      width: 25%;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+  .copy {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #787b80;
+
+    background-color: $primary_bg_color;
+    padding: 1rem 5% ;
+    p {
+      font-size: 0.813rem;
+    }
+  }
+
+}
 
 
 
@@ -235,7 +396,6 @@ article {
   article {
     .offers {
       flex-flow: column wrap;
-
       .offers_item{
         width: 60%;
         padding-top: 2rem;
@@ -254,6 +414,41 @@ article {
         }
       .blog_post_img {
         margin-top: 1rem;
+      }
+    }
+    .info {
+      input {
+        width: 40%;
+        padding: 4%;
+      }
+    }
+    .modules {
+      flex-flow: column wrap;
+      padding-bottom: 1rem;
+      .modules_item {
+        width: 100%;
+        padding-bottom: 1rem;
+        h1, p {padding: 1rem 0;
+        }
+        .modules_item_img {
+          width: 100%;
+        }
+      }
+    }
+    .booking {
+      flex-flow: column wrap;
+      padding-bottom: 1rem;
+      justify-content: flex-start;
+      .booking_type {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  footer {
+    .futered {
+      p {
+        font-size: 0.8rem;
       }
     }
   }
