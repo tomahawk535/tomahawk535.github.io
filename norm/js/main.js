@@ -1,7 +1,7 @@
 
 
 function getRandomBId(min, max) {
-  return Math.random().toFixed(4) * (max - min) + min;
+  return Math.random().toFixed(1) * (max - min) + min;
 }
 let resultBId = getRandomBId(1300, 4500)
 

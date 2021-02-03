@@ -20,7 +20,7 @@ header {
     margin-top: -1rem;
   }
   .header-info {
-    max-width: 35rem;
+    width: 35rem;
     color: #ffffff;
     h1 {
       font-size: 2.5rem;
@@ -31,7 +31,7 @@ header {
       font-weight: 500;
     }
     iframe {
-      width: 35rem;
+      width: 40rem;
       height: 18.25rem;
       margin-top: 1rem;
       z-index: 999;
@@ -39,7 +39,7 @@ header {
   }
   .reg {
     display: flex;
-    width: 20rem;
+    width: 30rem;
     flex-direction: column;
     align-items: center;
     margin-left: 1rem;
@@ -102,7 +102,7 @@ header {
       margin-top: 1rem;
       margin-left: 1rem;
       border-radius: 20px;
-     align-self: flex-start;
+
     }
     .ua-flag_text {
       font-size: 0.875rem;
@@ -136,16 +136,17 @@ article {
       font-size: 1.3rem;
       font-weight: 500;
       margin-top: 1rem;
+      margin-right: 2rem;
       span {
         color: #fd3277;
       }
     }
     .coin-price_ask {
-      margin-left: 0.5rem;
+      margin-left: 1rem;
     }
   }
   img {
-    margin: 0 0.4rem;
+    margin: 0 1.7rem;
   }
 
   .pop-up {
@@ -260,7 +261,7 @@ footer {
 }
 
 //for mobile only
-@media all and (max-width:599px){
+@media all and (max-width:721px){
   body {
     display: flex;
     flex-wrap: wrap;
@@ -318,9 +319,53 @@ footer {
       margin-top: 1rem;
       padding-bottom: 1rem;
     }
-
   }
+}
+@media all and (min-width:900px) {
+  header, article {
+    padding: 1rem 5%;
+  }
+  article {
+    padding-bottom: 5rem;
+  }
+  header .reg .ua-flag {
+    align-self: flex-start;
+  }
+}
+@media all and (min-width:1200px) {
+  header, article {
+    padding: 1rem 15%;
+  }
+  article {
+    padding-bottom: 5rem;
+  }
+  header .reg .ua-flag {
+    align-self: flex-start;
+  }
+}
 
+//for big desktop up
+@media all and (min-width:1800px) {
+  header, article {
+    padding: 1rem 20%;
+  }
+  header .header-info {
+    width: 70rem;
+  }
+  header .reg {
+    width: 35rem;
+  }
+  header .header-info iframe {
+    width: 45rem;
+    margin-top: 3rem;
+  }
+  header .reg .ua-flag {
+    align-self: flex-start;
+  }
+  article {
+    margin-top: -5rem;
+    padding-bottom: 3rem;
+  }
 
 }
 

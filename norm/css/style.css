@@ -22,7 +22,7 @@ header .header {
   margin-top: -1rem;
 }
 header .header-info {
-  max-width: 35rem;
+  width: 35rem;
   color: #ffffff;
 }
 header .header-info h1 {
@@ -34,14 +34,14 @@ header .header-info p {
   font-weight: 500;
 }
 header .header-info iframe {
-  width: 35rem;
+  width: 40rem;
   height: 18.25rem;
   margin-top: 1rem;
   z-index: 999;
 }
 header .reg {
   display: flex;
-  width: 20rem;
+  width: 30rem;
   flex-direction: column;
   align-items: center;
   margin-left: 1rem;
@@ -103,7 +103,6 @@ header .reg .ua-flag {
   margin-top: 1rem;
   margin-left: 1rem;
   border-radius: 20px;
-  align-self: flex-start;
 }
 header .reg .ua-flag_text {
   font-size: 0.875rem;
@@ -137,15 +136,16 @@ article .coin-price p {
   font-size: 1.3rem;
   font-weight: 500;
   margin-top: 1rem;
+  margin-right: 2rem;
 }
 article .coin-price p span {
   color: #fd3277;
 }
 article .coin-price .coin-price_ask {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 article img {
-  margin: 0 0.4rem;
+  margin: 0 1.7rem;
 }
 article .pop-up {
   position: absolute;
@@ -257,7 +257,7 @@ footer .mobile-footer {
   display: none;
 }
 
-@media all and (max-width: 599px) {
+@media all and (max-width: 721px) {
   body {
     display: flex;
     flex-wrap: wrap;
@@ -318,6 +318,59 @@ footer .mobile-footer {
     display: block;
     margin-top: 1rem;
     padding-bottom: 1rem;
+  }
+}
+@media all and (min-width: 900px) {
+  header, article {
+    padding: 1rem 5%;
+  }
+
+  article {
+    padding-bottom: 5rem;
+  }
+
+  header .reg .ua-flag {
+    align-self: flex-start;
+  }
+}
+@media all and (min-width: 1200px) {
+  header, article {
+    padding: 1rem 15%;
+  }
+
+  article {
+    padding-bottom: 5rem;
+  }
+
+  header .reg .ua-flag {
+    align-self: flex-start;
+  }
+}
+@media all and (min-width: 1800px) {
+  header, article {
+    padding: 1rem 20%;
+  }
+
+  header .header-info {
+    width: 70rem;
+  }
+
+  header .reg {
+    width: 35rem;
+  }
+
+  header .header-info iframe {
+    width: 45rem;
+    margin-top: 3rem;
+  }
+
+  header .reg .ua-flag {
+    align-self: flex-start;
+  }
+
+  article {
+    margin-top: -5rem;
+    padding-bottom: 3rem;
   }
 }
 
