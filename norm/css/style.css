@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../img/bg.png");
+  padding: 2rem 19%;
+  display: flex;
+  flex-wrap: wrap;
+}
+header .logo {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+header .header {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: -1rem;
+}
+header .header-info {
+  max-width: 35rem;
+  color: #ffffff;
+}
+header .header-info h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+header .header-info p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+header .header-info iframe {
+  width: 35rem;
+  height: 18.25rem;
+  margin-top: 1rem;
+  z-index: 999;
+}
+header .reg {
+  display: flex;
+  width: 20rem;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+header .reg .reg-form {
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  padding: 0.625rem;
+  border-radius: 5px;
+}
+header .reg .reg-form .reg-form_step {
+  background-color: #10005c;
+  width: 5.313rem;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 0.313rem;
+  margin: 1rem auto;
+  font-size: 0.938rem;
+}
+header .reg .reg-form .reg-form_name {
+  font-size: 1.963rem;
+}
+header .reg .reg-form .reg-form_name span {
+  font-weight: 800;
+}
+header .reg .reg-form .reg-form_item {
+  width: 18.875rem;
+  background-color: #eceef1;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  margin-top: 0.313rem;
+  padding: 0.5em;
+  outline: none;
+}
+header .reg .reg-form .reg-form-btn {
+  width: 20rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+  padding: 0.5rem;
+  outline: none;
+  background-color: #ff3d3d;
+  background-image: linear-gradient(0deg, #ff6a52 10%, #fd3675 91%);
+}
+header .reg .reg-form .reg-form-btn:hover {
+  cursor: pointer;
+}
+header .reg .ua-flag {
+  width: 2.5rem;
+  height: 1.563rem;
+  background-image: linear-gradient(#0518bc 50%, #ffff00 50%);
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+header .reg .ua-flag_text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  align-self: flex-end;
+  width: 75%;
+  margin-top: -1.5rem;
+}
+header .reg .ua-flag_text span {
+  color: #fd3277;
+}
+
+article {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: -9rem;
+  padding: 1rem 19% 4rem;
+  text-align: right;
+}
+article .coin-price {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+article .coin-price p {
+  text-transform: uppercase;
+  width: 9.375rem;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+article .coin-price p span {
+  color: #fd3277;
+}
+article .coin-price .coin-price_ask {
+  margin-left: 0.5rem;
+}
+article img {
+  margin: 0 0.4rem;
+}
+article .pop-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2rem;
+  min-height: 100%;
+}
+article .pop-up .pop-up-content {
+  width: 20.625rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+article .pop-up .pop-up_content-step {
+  background-color: #10005c;
+  width: 5.313rem;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 0.313rem;
+  margin: 1rem auto;
+  font-size: 0.938rem;
+}
+article .pop-up .pop-up-content-name {
+  font-size: 1.963rem;
+  color: black;
+}
+article .pop-up .pop-up-content-name span {
+  font-weight: 800;
+}
+article .pop-up .pop-up_item {
+  width: 18.875rem;
+  background-color: #eceef1;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  margin-top: 0.313rem;
+  padding: 0.5em;
+  outline: none;
+}
+article .pop-up .pop-up-btn {
+  width: 20rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+  padding: 0.5rem;
+  outline: none;
+  background-color: #ff3d3d;
+  background-image: linear-gradient(0deg, #ff6a52 10%, #fd3675 91%);
+}
+article .pop-up .pop-up-btn:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-image: linear-gradient(#ffff 50%, #10005c 50%);
+  width: 100%;
+  padding-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+footer .result {
+  font-size: 0.875rem;
+  color: #000000;
+  font-weight: 800;
+  padding-left: 19%;
+  margin-top: 1rem;
+}
+footer .slider {
+  width: 100%;
+  padding-top: 2rem;
+}
+footer .slider_item {
+  background-image: url("../img/footer_slide_1.png");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  padding: 1rem 0.5rem 0;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+}
+footer .slider_item_price {
+  color: #fd3277;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+footer .slider_item_data {
+  font-size: 1.063rem;
+  color: #6b6b6b;
+  font-weight: 700;
+  margin-top: 0;
+}
+footer .slider_item_name {
+  font-size: 1.188rem;
+  color: #000000;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+footer .mobile-footer {
+  display: none;
+}
+
+@media all and (max-width: 599px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  header {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header .header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header .header .reg-form {
+    width: 100%;
+  }
+  header .header iframe {
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 5px;
+  }
+
+  article {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    max-width: 100%;
+  }
+  article .coin-price {
+    justify-content: center;
+    width: 100%;
+  }
+  article .pop-up {
+    position: fixed;
+  }
+
+  footer {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .result {
+    width: 100%;
+  }
+  footer .slider {
+    display: none;
+  }
+  footer .mobile-footer {
+    width: 30%;
+    display: block;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
