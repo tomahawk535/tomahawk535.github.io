@@ -1,0 +1,175 @@
+$header-font :  'Play', sans-serif;
+$paragraf-font:  'EB Garamond', serif;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f3f4;
+  width: 100%;
+  padding:  0 10% ;
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);;
+    aside {
+      background-color: #5b92e5;
+      flex-basis: 20%;
+      padding: 3em 1em;
+      img {
+        width: 100%;
+        height: 30%;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+      .contact_container {
+        margin: 1em 0 2em;
+        width: 100%;
+        text-align: left;
+        padding-left: 1em;
+          h3 {
+            font-family: $header-font;
+            font-size: 2em;
+            font-weight: bolder;
+            margin-bottom: 1em;
+            color: gainsboro;
+          }
+        .contact-item {
+          a {
+            font-size: 1rem;
+            font-family: $paragraf-font;
+            text-decoration: none;
+            color: gainsboro;
+          }
+          span {
+            font-weight: bolder;
+            color: gainsboro;
+          }
+        }
+      }
+      .skill_container {
+        width: 100%;
+        text-align: left;
+        padding-left: 1em;
+        margin: 2em 0;
+        h3 {
+          font-family: $header-font;
+          font-size: 2em;
+          font-weight: bolder;
+          margin: 1em 0;
+          color: gainsboro;
+        }
+        .skill-item {
+          list-style-type: none;
+          font-family: $paragraf-font;
+          font-weight: 700;
+          color: gainsboro;
+          font-size: 1.5em;
+        }
+      }
+    }
+    article {
+      background-color: gainsboro;
+      flex-basis: 80%;
+      padding: 3em 7%;
+      h1, h2, h3 {
+        font-family:$header-font;
+        font-size: 2em;
+        font-weight: bolder;
+        margin-bottom: 1em;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      .maininfo, .project, .ed, .exp {
+        width: 100%;
+        margin: 1em 0 2em;
+        font-family: $paragraf-font;
+        line-height: 1.5;
+
+      }
+      .project{
+        li {
+          margin: 1em;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+
+          a {
+            text-decoration: none;
+            color: #000000;
+            text-align: justify;
+            font-size: 1em;
+            &:hover {
+              color: #5b92e5;
+              font-size: 1.1em;
+            }
+          }
+          span {
+            font-weight: bolder;
+            font-family: $header-font;
+            margin-left: 1em;
+          }
+
+        }
+      }
+      .ed {
+        h4 {
+          margin-top: 1em;
+        }
+      }
+
+    }
+  }
+}
+@media all and (max-width:599px){
+  body {
+    padding: 0 3%;
+    .wrapper {
+      flex-wrap: wrap;
+      aside,  {
+        display: flex;
+        flex-basis: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img{
+          width: 100px;
+          height: 100px;
+          flex-basis: 30%;
+          margin:  1em 0 0;
+        }
+        .contact_container{
+          flex-basis: 70%;
+          text-align: right;
+          padding: 1em;
+          margin: 0;
+          h3 {
+            margin-bottom: 0.5em;
+          }
+        }
+        .skill_container {
+          flex-basis: 50%;
+          font-size: 1em;
+          margin-top: 0;
+        }
+      }
+      .article {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .maininfo, .project, .ed, .exp {
+          font-size: 0.6em;
+        }
+        h1, h2, h3 {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+}
