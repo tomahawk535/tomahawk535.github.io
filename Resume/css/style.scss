@@ -89,6 +89,7 @@ body {
         margin: 1em 0 2em;
         font-family: $paragraf-font;
         line-height: 1.5;
+        font-size: 1rem;
 
       }
       .project{
@@ -136,15 +137,18 @@ body {
         align-self: center;
         padding: 1rem;
         img{
-          max-width: 70px;
-          height: 70px;
+          max-width: 100px;
+          height: 100px;
           flex-basis: 50%;
           border: 1px solid gainsboro;
+          border-radius: 0;
         }
         .contact_container{
           flex-basis: 50%;
           margin: 0;
           text-align: center;
+          align-self: center;
+          padding: 0;
           h3 {
             font-size: 1.125em;
             margin-bottom: 0.5em;
@@ -159,18 +163,22 @@ body {
         .skill_container {
           flex-basis: 50%;
           text-align: center;
+          margin-top: 1em;
+          padding: 0;
           h3 {
-            font-size: 1.125em;
+            font-size: 1.5em;
+            margin: 0.5em;
           }
           .skill-item {
               font-size: 0.65em;
+            margin-top: 0;
           }
         }
       }
       .article {
         order: 1;
         flex-basis: 100%;
-        padding: 1em 7%;
+        padding: 1em;
         .maininfo, .project, .ed, .exp {
           font-size: 0.65em;
         }
@@ -181,15 +189,18 @@ body {
     }
   }
 }
-@media (min-width:599px) and (max-width:1300px){
+@media (min-width:600px) and (max-width:1300px){
   body {
+    padding: 0 1rem;
     .wrapper{
       aside {
-        padding: 3em;
         img {
           width: 200px;
           height: 200px;
         }
+      }
+      article {
+        padding: 1em;
       }
     }
   }

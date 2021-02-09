@@ -87,6 +87,7 @@ body .wrapper article .maininfo, body .wrapper article .project, body .wrapper a
   margin: 1em 0 2em;
   font-family: "EB Garamond", serif;
   line-height: 1.5;
+  font-size: 1rem;
 }
 body .wrapper article .project li {
   margin: 1em;
@@ -127,15 +128,18 @@ body .wrapper article .ed h4 {
     padding: 1rem;
   }
   body .wrapper aside img {
-    max-width: 70px;
-    height: 70px;
+    max-width: 100px;
+    height: 100px;
     flex-basis: 50%;
     border: 1px solid gainsboro;
+    border-radius: 0;
   }
   body .wrapper aside .contact_container {
     flex-basis: 50%;
     margin: 0;
     text-align: center;
+    align-self: center;
+    padding: 0;
   }
   body .wrapper aside .contact_container h3 {
     font-size: 1.125em;
@@ -150,17 +154,21 @@ body .wrapper article .ed h4 {
   body .wrapper aside .skill_container {
     flex-basis: 50%;
     text-align: center;
+    margin-top: 1em;
+    padding: 0;
   }
   body .wrapper aside .skill_container h3 {
-    font-size: 1.125em;
+    font-size: 1.5em;
+    margin: 0.5em;
   }
   body .wrapper aside .skill_container .skill-item {
     font-size: 0.65em;
+    margin-top: 0;
   }
   body .wrapper .article {
     order: 1;
     flex-basis: 100%;
-    padding: 1em 7%;
+    padding: 1em;
   }
   body .wrapper .article .maininfo, body .wrapper .article .project, body .wrapper .article .ed, body .wrapper .article .exp {
     font-size: 0.65em;
@@ -169,13 +177,16 @@ body .wrapper article .ed h4 {
     font-size: 1.125em;
   }
 }
-@media (min-width: 599px) and (max-width: 1300px) {
-  body .wrapper aside {
-    padding: 3em;
+@media (min-width: 600px) and (max-width: 1300px) {
+  body {
+    padding: 0 1rem;
   }
   body .wrapper aside img {
     width: 200px;
     height: 200px;
+  }
+  body .wrapper article {
+    padding: 1em;
   }
 }
 @media (min-width: 1900px) and (max-width: 3000px) {
