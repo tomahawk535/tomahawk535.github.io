@@ -1,2 +1,2 @@
 # Resume
-HTML/CSS
+HTML/SCSS

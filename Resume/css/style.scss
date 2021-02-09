@@ -17,7 +17,7 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);;
     aside {
       background-color: #5b92e5;
-      flex-basis: 20%;
+      flex-basis: 30%;
       padding: 3em 1em;
       img {
         width: 100%;
@@ -73,7 +73,7 @@ body {
     }
     article {
       background-color: gainsboro;
-      flex-basis: 80%;
+      flex-basis: 70%;
       padding: 3em 7%;
       h1, h2, h3 {
         font-family:$header-font;
@@ -125,51 +125,111 @@ body {
 }
 @media all and (max-width:599px){
   body {
-    padding: 0 3%;
+    padding: 0 5%;
     .wrapper {
       flex-wrap: wrap;
       aside,  {
+        order: 2;
         display: flex;
-        flex-basis: 100%;
-        max-width: 100%;
         flex-wrap: wrap;
-        justify-content: space-between;
+        flex-basis: 100%;
+        align-self: center;
+        padding: 1rem;
         img{
-          width: 100px;
-          height: 100px;
-          flex-basis: 30%;
-          margin:  1em 0 0;
+          max-width: 70px;
+          height: 70px;
+          flex-basis: 50%;
+          border: 1px solid gainsboro;
         }
         .contact_container{
-          flex-basis: 70%;
-          text-align: right;
-          padding: 1em;
+          flex-basis: 50%;
           margin: 0;
+          text-align: center;
           h3 {
+            font-size: 1.125em;
             margin-bottom: 0.5em;
+          }
+          .contact-item {
+            font-size: 0.65em;
+          }
+          span {
+            display: none;
           }
         }
         .skill_container {
           flex-basis: 50%;
-          font-size: 1em;
-          margin-top: 0;
+          text-align: center;
+          h3 {
+            font-size: 1.125em;
+          }
+          .skill-item {
+              font-size: 0.65em;
+          }
         }
       }
       .article {
+        order: 1;
         flex-basis: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        padding: 1em 7%;
         .maininfo, .project, .ed, .exp {
-          font-size: 0.6em;
+          font-size: 0.65em;
         }
         h1, h2, h3 {
-          font-size: 1em;
+          font-size: 1.125em;
         }
       }
     }
   }
+}
+@media (min-width:599px) and (max-width:1300px){
+  body {
+    .wrapper{
+      aside {
+        padding: 3em;
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+@media (min-width:1900px) and (max-width:3000px){
+  body {
+    padding: 0 15%;
+    .wrapper {
+      max-width: 1700px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      aside,  {
+          padding: 3em;
+        .contact_container{
+          h3 {
+            font-size:1.5em;
 
+          }
+          .contact-item {
+            font-size: 1em;
+          }
+        }
+        .skill_container {
+
+          h3 {
+            font-size: 1.5em;
+          }
+          .skill-item {
+            font-size: 1em;
+          }
+        }
+      }
+      .article {
+        .maininfo, .project, .ed, .exp {
+          font-size: 1em;
+        }
+        h1, h2, h3 {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
 }
